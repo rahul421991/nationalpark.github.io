@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size:62.5%;
+    font-family: $poppins-reg;
+    scroll-behavior: smooth;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+.white-bg{
+    background-color:$white;
+}
+
+    h1, h2, h3{
+        font-family: $poppins-bold;
+        font-size:$heading-font-size;
+        font-family:$poppins-bold;
+        text-transform: uppercase;
+        @include margin-mix(25px 0 25px 0);
+        span{
+            color:$theme-secondry-color;
+        }
+    }
+    p{
+        font-size:$pragraph-font-size;
+        line-height: 35px;
+        margin-bottom: 0;
+    }
+    .theme-primary-btn{
+        @include theme-btn($theme-primary-color, $poppins-medium, $black-color, $pragraph-font-size, 0.8);
+        @include padding-mix(10px 10px);
+        @include margin-mix(15px 0 0);
+        &:hover{
+            background-color:$theme-secondry-color;
+            color:$white;
+            border-color:$theme-secondry-color;
+        }
+    }
+
+    .theme-secondary-btn{
+        @include theme-btn($theme-secondry-color, $poppins-reg, $black-color, $pragraph-font-size, 1);
+        @include padding-mix(10px 20px);
+        @include margin-mix(15px 0 0);
+        border:1px solid transparent;
+        font-size: $pragraph-font-size;
+        &:hover{
+            background-color:$theme-secondry-color;
+            color:$white;
+            border-color:$theme-secondry-color;
+        }
+    }
+    .theme-third-btn{
+        @include theme-btn($white, $poppins-reg, $black-color, $pragraph-font-size, 1);
+        @include padding-mix(7px 10px);
+        @include margin-mix(15px 0 0);
+        border:1px solid $black-color;
+        font-size: $pragraph-font-size;
+        &:hover{
+            background-color:$theme-secondry-color;
+            color:$white;
+            border-color:$theme-secondry-color;
+        }
+    }
+    .text-left-space{
+        margin-left:30px;
+    }
+   
+    .rating{
+        @include background(url(../images/rating.jpg), contain);
+        height:17px;
+        &::before{
+            background-color: transparent;
+        }
+    }
+    .used-offer-tag{
+        position:relative;
+        overflow:hidden;
+    .offer-tag{
+        background-color:red;
+        color:$white;
+        font-family: $poppins-bold;
+        font-size:$small-fontsize;
+        position: absolute;
+        top: -12px;
+        left: -35px;
+        width: 100px;
+        height: 57px;
+        text-align: center;
+        line-height: 80px;
+        transform: rotate(-45deg);
+    }
+}
+
+/* ===== Booking Form ===== */
+
+.form-design{
+    margin-top:-50px;
+    
+
+    .form-main-heading{
+        background-color:rgba($theme-primary-color, 0.6);
+        color:$white;
+        text-align: center;
+        font-family: $poppins-bold;
+        font-size:$medium-fontsize;
+        @include border-radius(4px 4px 0 0);
+        @include padding-mix(10px 0);
+        white-space: nowrap;
+        height: 50px;
+        line-height: 35px;
+    }
+    @include for-size(max-mobile){
+        margin-top:0;
+        .form-main-heading{
+            background-color:rgba($theme-primary-color, 1);
+        }
+    }
+    .form-section{
+        border:1px solid rgba($theme-bg-color, 0.1);
+        @include padding-mix(15px 10px );
+
+        .form-group{
+            font-size:1.4em;
+            label{
+                font-family: $poppins-medium;
+                
+            }
+            .form-control{
+                height:45px;
+               
+
+            }
+        }
+    }
+
+}
+@include placeholder {
+    color: white;
+    font-size:0.9em;
+}
+
+.category-list{
+    @include margin-mix(15px 0);
+    .category-heading{
+        @include padding-mix(10px 10px);
+        @include border-radius(8px 8px 0 0);
+        font-size:$medium-fontsize;
+        font-family: $poppins-semibold;
+        border:1px solid rgba($theme-bg-color, 0.2);
+        border-bottom-width: 0;
+      
+    }
+    .list-group-item{
+        font-size:$small-fontsize;
+        font-family: $poppins-reg;
+    }
+    
+}
+.table{
+    font-size:$small-fontsize;
+    margin-bottom: 0;
+}
+.pay-now{
+    @include theme-btn($theme-secondry-color, $poppins-bold, $white, $small-fontsize, 1);
+    @include padding-mix(8px 15px);
+    @include border-radius(2px);
+    &:hover{
+        color:$white;
+        background-color:$theme-secondry-color;
+    }
+}
