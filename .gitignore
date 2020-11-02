@@ -1,5 +1,4 @@
-node_modules,
-checkout.php,
-notify.php,
+checkout.php
+notify.php
 return.php
 
