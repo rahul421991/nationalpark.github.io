@@ -403,7 +403,6 @@ include_once("include/header.php");
         </div>
     </div>
 </section>
-<h1>content should be update</h1>
 <?php include_once("include/footer.php") ?>
 
 <script src="js/owl.carousel.js"></script>
