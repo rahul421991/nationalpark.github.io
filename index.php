@@ -1,12 +1,69 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?=stripslashes($meta_title);?></title>
+    <meta name="description" content="<?=stripslashes($meta_description);?>" />
+    <meta name="keywords" content="<?=stripslashes($meta_keywords);?>" />
 
-$meta_title="Kanha National Park - India";
-$meta_description="Welcome to the Kanha National Park. Visit here to know the information about the Kanha Reserve Park and for making a hassle free booking of the hotels & resorts, Jeep Safari in Kanha.";
-$meta_keywords="about Kanha national park, info about Kanha";
-$currentPage='index' ;
-include_once("include/header.php");
+    <link rel="stylesheet" href="css/bootstrap-min.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+<body>
 
-?> 
+<header class="sticky" >
+    <div class="w-100 ">
+        <div class="header-contact-info">
+        <div class="container ">
+            <div class="row mail-top">
+                <div class="contact"><span><i class="fas fa-phone-alt"></i> 9871803300, 8376078520</span>
+                <span class="vline">|</span>
+                <span><i class="fas fa-clock"></i> 24x7 Support</span></div>
+                <div class="email"><i class="fas fa-envelope"></i> contact@kanhakislinationalpark.in</div>
+            </div>
+        </div>
+        </div>
+        <div class="nav-section ">
+          <div class="container p-0">
+              <nav class="navbar navbar-expand-lg">
+                <div class="mobile-menu">
+                  <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid logo-img" alt="Kanha National Park"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                  </button>
+                </div>
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item <?php if($currentPage =='index'){echo 'active';}?>">
+                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item <?php if($currentPage =='kanha-hotels'){echo 'active';}?>">
+                        <a class="nav-link" href="kanha-hotels.php">Hotels In Kanha</a>
+                      </li>
+                      <li class="nav-item <?php if($currentPage =='tour-package'){echo 'active';}?>">
+                        <a class="nav-link" href="tour-package.php">Tour Package</a>
+                      </li>
+                      <li class="nav-item <?php if($currentPage =='online-safari-booking'){echo 'active';}?>">
+                        <a class="nav-link" href="online-safari-booking.php">Online Safari Booking</a>
+                      </li>
+                      <li class="nav-item <?php if($currentPage =='contact'){echo 'active';}?>">
+                          <a class="nav-link" href="contact-us.php">Contact Us</a>
+                      </li>
+                    </ul>
+                    <a class="nav-link pay-now" href="paynow.php">Pay Now</a>
+                  </div>
+                </nav>
+          </div>
+      </div>
+      </div>
+      <div class="maincont" id="loader">
+      <div class="scroll-loader">~Loading~</div>
+</div>
+  </header>
 
 
 <!--NavBar-->
@@ -403,8 +460,66 @@ include_once("include/header.php");
         </div>
     </div>
 </section>
-<h1> Update the Content in Loca Branch _rahul11022020"</h1>
-<?php include_once("include/footer.php") ?>
+<footer>
+        <div class="container footersection">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-3 footerlink">
+                    <h4>Kanha IMPORTANT LINKS</h4>
+                    <ul>
+                      <li><a href="#">HOME</a></li>
+                       <li><a href="#"> About US</a></li>
+                       <li><a href="#"> TOUR PACKAGESONLINE SAFARI</a></li>
+                       <li><a href="#"> BOOKING</a></li>
+                       <li><a href="#"> CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-3 footerlink">
+                  <h4>Kanha IMPORTANT LINKS</h4>
+                  <ul>
+                    <li><a href="#">HOME</a></li>
+                     <li><a href="#"> About US</a></li>
+                     <li><a href="#"> TOUR PACKAGESONLINE SAFARI</a></li>
+                     <li><a href="#"> BOOKING</a></li>
+                     <li><a href="#"> CONTACT US</a></li>
+                  </ul>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-3 footerlink">
+                <h4>Kanha IMPORTANT LINKS</h4>
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                   <li><a href="#"> About US</a></li>
+                   <li><a href="#"> TOUR PACKAGESONLINE SAFARI</a></li>
+                   <li><a href="#"> BOOKING</a></li>
+                   <li><a href="#"> CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-3 contact-info">
+              <h4>Connect With Us</h4>
+              <p><i class="fas fa-phone-alt mr-2"></i> 9871803300</p>
+              <p><i class="fas fa-phone-alt mr-2"></i> 8376078520</p>
+              <p><i class="fas fa-envelope mr-2"></i> contact@kanhakislinationalpark.in</p>
+              <ul class="social-med">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                 <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                 <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+              </ul>
+              
+          </div>
+            </div>
+            <div class="copyright">
+              <div>Copyright &copy; Kanha National Park 2020</div>
+              <div><a href="mailto:rs7503528883@gmail.com"> Created By : <strong>Rahul Sharma</strong></a></div>
+            </div>
+            
+        </div>
+        
+    </footer>
+    <button type="button" class="btn page-up" id="upscroll"><i class="fas fa-chevron-up"></i></button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-min.js" ></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
 
 <script src="js/owl.carousel.js"></script>
 <script>
