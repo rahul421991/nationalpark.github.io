@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?=stripslashes($meta_title);?></title>
-    <meta name="description" content="<?=stripslashes($meta_description);?>" />
-    <meta name="keywords" content="<?=stripslashes($meta_keywords);?>" />
+    <title>Kanha Park</title>
 
     <link rel="stylesheet" href="css/bootstrap-min.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -38,19 +36,19 @@
                 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                      <li class="nav-item <?php if($currentPage =='index'){echo 'active';}?>">
+                      <li class="nav-item ">
                         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                       </li>
-                      <li class="nav-item <?php if($currentPage =='kanha-hotels'){echo 'active';}?>">
+                      <li class="nav-item">
                         <a class="nav-link" href="kanha-hotels.php">Hotels In Kanha</a>
                       </li>
-                      <li class="nav-item <?php if($currentPage =='tour-package'){echo 'active';}?>">
+                      <li class="nav-item ">
                         <a class="nav-link" href="tour-package.php">Tour Package</a>
                       </li>
-                      <li class="nav-item <?php if($currentPage =='online-safari-booking'){echo 'active';}?>">
+                      <li class="nav-item">
                         <a class="nav-link" href="online-safari-booking.php">Online Safari Booking</a>
                       </li>
-                      <li class="nav-item <?php if($currentPage =='contact'){echo 'active';}?>">
+                      <li class="nav-item">
                           <a class="nav-link" href="contact-us.php">Contact Us</a>
                       </li>
                     </ul>
